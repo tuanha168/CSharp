@@ -3,7 +3,7 @@ namespace CSharp
 {
     public class quadratic
     {
-        public quadratic(float a, float b, float c)
+        static void quadraticCalc(float a, float b, float c)
         {
             if (a == 0)
             {
@@ -35,6 +35,7 @@ namespace CSharp
             {
                 Console.WriteLine("Vô nghiệm!");
             }
+            return;
         }
         public static void Main(string[] args)
         {
@@ -47,7 +48,7 @@ namespace CSharp
                 Console.Write($"{a}x^2 ");
                 Console.Write((b >= 0 ? "+" : "") + $" {b}x ");
                 Console.WriteLine((c >= 0 ? "+" : "") + $" {c} = 0");
-                quadratic qe = new quadratic(a, b, c);
+                quadraticCalc(a, b, c);
             }
             catch (FormatException)
             {
