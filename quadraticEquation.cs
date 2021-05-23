@@ -35,7 +35,6 @@ namespace CSharp
             {
                 Console.WriteLine("Vô nghiệm!");
             }
-            return;
         }
         public static void Main(string[] args)
         {
