@@ -1,10 +1,27 @@
 using System;
 namespace Session1
 {
-    public class quadratic
+    public class Quadratic
     {
-        public static void quadraticCalc(float a, float b, float c)
+        public static void run()
         {
+            Console.WriteLine($"Phương trình bậc 2:");
+            float a = 0;
+            float b = 0;
+            float c = 0;
+            try
+            {
+                a = float.Parse(Console.ReadLine());
+                b = float.Parse(Console.ReadLine());
+                c = float.Parse(Console.ReadLine());
+                Console.Write($"{a}x^2 ");
+                Console.Write((b >= 0 ? "+" : "") + $" {b}x ");
+                Console.WriteLine((c >= 0 ? "+" : "") + $" {c} = 0");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine($"Hãy nhập số thực");
+            }
             if (a == 0)
             {
                 if (b == 0)
@@ -36,23 +53,5 @@ namespace Session1
                 Console.WriteLine("Vô nghiệm!");
             }
         }
-        //public static void Main(string[] args)
-        //{
-        //    Console.WriteLine($"Phương trình bậc 2:");
-        //    try
-        //    {
-        //        float a = float.Parse(Console.ReadLine());
-        //        float b = float.Parse(Console.ReadLine());
-        //        float c = float.Parse(Console.ReadLine());
-        //        Console.Write($"{a}x^2 ");
-        //        Console.Write((b >= 0 ? "+" : "") + $" {b}x ");
-        //        Console.WriteLine((c >= 0 ? "+" : "") + $" {c} = 0");
-        //        quadraticCalc(a, b, c);
-        //    }
-        //    catch (FormatException)
-        //    {
-        //        Console.WriteLine($"Hãy nhập số thực");
-        //    }
-        //}
     }
 }

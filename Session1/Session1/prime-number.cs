@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace CSharp
+namespace Session1
 {
     class PrimeNumber
     {
-        public static void Main(string[] args)
+        public static void run()
         {
             while (true)
             {
@@ -32,7 +32,6 @@ namespace CSharp
                 if (count == 0) Console.WriteLine("Số nguyên tố");
                 else Console.WriteLine("Không phải số nguyên tố");
             }
-
         }
     }
 }

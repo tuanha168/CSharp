@@ -1,9 +1,9 @@
 using System;
-namespace CSharp
+namespace Session1
 {
     public class Fibonacci
     {
-        public static void Main(string[] args)
+        public static void run()
         {
             while (true)
             {
