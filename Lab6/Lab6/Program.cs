@@ -1,10 +1,10 @@
-﻿namespace Lab3
+﻿namespace Lab6
 {
   class MainClass
   {
     public static void Main(string[] args)
     {
-      exA.run();
+
     }
   }
 }
