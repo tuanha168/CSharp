@@ -2,7 +2,8 @@ namespace Lab4
 {
   public abstract class Window
   {
-    protected int top;
+    public virtual string Name { get; set; }
+
     protected int left;
 
     public Window(int top, int left)
