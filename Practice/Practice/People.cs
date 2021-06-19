@@ -18,7 +18,7 @@ namespace Practice
       string genderString = Gender ? "Male" : "Female";
       Console.WriteLine($"Person Details: Name = {Name}, Gender = {genderString}, Age = {Age.ToString()}");
       Age += 10;
-      Console.WriteLine($"Person Details: Name = {Name}, Gender = {genderString}, Age = {Age.ToString()}");
+      Console.WriteLine($"Person Details (after increamenting age): Name = {Name}, Gender = {genderString}, Age = {Age.ToString()}");
     }
   }
 }
